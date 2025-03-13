@@ -1,0 +1,73 @@
+
+
+/* page styling */
+body {background-color: darkslategrey}
+
+/* h1 styling */
+h1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* h3 styling */
+.menu-bar {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  grid-gap: 10px;
+}
+.menu-child {
+  border: 1px whitesmoke;
+}
+
+h3 {
+  color: white;
+  font-size: 20px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* paragraph styling */
+p {
+  color: white;
+  font-size: 25px;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* h4 styling */
+h4 {
+  color: white;
+  font-size: 20px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* list styling */
+li {
+  color: white;
+  font-size: 25px;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* image styling */
+img {
+  border: 5px solid white;
+}
+
+.galleryOne {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
