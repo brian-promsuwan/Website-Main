@@ -1,73 +1,52 @@
-
-
-/* page styling */
-body {background-color: darkslategrey}
-
-/* h1 styling */
-h1 {
-  color: white;
-  font-size: 50px;
-  font-family: "Press Start 2P", system-ui;
-  font-weight: 400;
-  font-style: normal;
+* {
+  margin: 0px;
 }
 
-/* h3 styling */
-.menu-bar {
-  background-color: transparent;
-  display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
-  grid-gap: 10px;
+a:link{
+color:whitesmoke;
 }
-.menu-child {
-  border: 1px whitesmoke;
+a:visited{ 
+color:whitesmoke;
 }
-
-h3 {
-  color: white;
-  font-size: 20px;
-  font-family: "Press Start 2P", system-ui;
-  font-weight: 400;
-  font-style: normal;
+a:hover{
+animation:blinker 0.7s linear infinite;
+}
+@keyframes blinker {
+50% {
+  opacity:0;
+}
 }
 
-/* paragraph styling */
-p {
-  color: white;
-  font-size: 25px;
-  font-family: "VT323", monospace;
-  font-weight: 400;
-  font-style: normal;
+
+
+.mainPage {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://secure.static.tumblr.com/f32ee0dda230fd7b69e9ab098a3ba228/ctmhrlq/K2Ynnfhhp/tumblr_static_91y6pjva6r0o80sg8kc88c48k.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
-/* h4 styling */
-h4 {
-  color: white;
-  font-size: 20px;
-  font-family: "Press Start 2P", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* list styling */
-li {
-  color: white;
-  font-size: 25px;
-  font-family: "VT323", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* image styling */
-img {
-  border: 5px solid white;
-}
-
-.galleryOne {
+.mainMenu {
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
+}
+
+.title {
+  background-color:transparent;
+}
+
+
+.enter {
+  background-color:transparent;
+  width:vw;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: whitesmoke;
 }
