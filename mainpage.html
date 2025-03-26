@@ -1,13 +1,11 @@
-<title> Brian Nai </title>
+<title> Main Menu </title>
 
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
-	<style>
-/* page styling */
-body {background-color: darkslategrey}
-
+<link rel="stylesheet" href="style.css">
+<style>
 /* h1 styling */
 h1 {
   color: white;
@@ -15,19 +13,6 @@ h1 {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
-}
-
-/* h3 styling */
-.menu-bar {
-  background-color: transparent;
-  display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
-  grid-gap: 10px;
-}
-.menu-child {
-  border: 1px whitesmoke;
 }
 
 h3 {
@@ -56,75 +41,255 @@ h4 {
   font-style: normal;
 }
 
-/* list styling */
-li {
+* {
+background-image: url("https://i.imgur.com/dp2uaoA.mp4");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.welcome {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 20px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.intro {
+  position: relative;
+  display:inline-block;
+}
+.overlay-name {
+  position: relative;
+  color: white;
+  font-size: 30px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background: rgba(23, 112, 23, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.overlay-text {
+  position: relative;
   color: white;
   font-size: 25px;
   font-family: "VT323", monospace;
   font-weight: 400;
   font-style: normal;
+  background: rgba(23, 112, 23, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
 }
-
-/* image styling */
-img {
-  border: 5px solid white;
+.headshot {
+  position: relative;
+  display: inline-block;
 }
-
-.galleryOne {
+.imgHeadshot {
+  display: block;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 15%, 100% 87%, 80% 100%, 20% 100%, 0% 85%, 0% 15%);
+}
+.headshot::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(108%);
+  background: url("https://i.imgur.com/yINpyMk.png") center/cover no-repeat;
+  pointer-events: none;
+}
+a:link{
+  color:whitesmoke;
+}
+a:visited{ 
+  color:whitesmoke;
+}
+a:hover{
+  animation:blinker 0.7s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity:0;
+  }
+}
+.cv {
+  background-color:transparent;
+  width: vw;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  color: whitesmoke;
+}
+.characterSelect {
+  height: 100vh;
+  width: 100vw;
   display: flex;
+  gap: 30px;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
+  position: relative;
 }
-	</style>
-<h1> BRIAN NAI </h1>
-<div class="menu-bar">
-	<div class="menu-child" id="stage">
-		<a href=""><h3>stage</h3></a>
-	</div>
-	<div class="menu-child" id="screen">
-		<a href=""><h3>screen</h3></a>
-	</div>
-	<div class="menu-child" id="stunts">
-		<a href=""><h3>stunts</h3></a>
-	</div>
-	<div class="menu-child" id="seiyu">
-		<a href=""><h3>seiyu</h3></a>
-	</div>
-</div>
-
-<br>
-	<div class="galleryOne">
-<img src="https://i.imgur.com/JLudnUu.png" height="504">
-<img src="https://i.imgur.com/R286tAQ.jpeg" height="504" width=>
-<img src="https://i.imgur.com/9hByAG3.jpeg" height="500">
-	</div class="galleryOne">
+.stage {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.imgStage {
+  height: 405px;
+  width: 310px;
+  object-fit: cover;
+  object-position: 70% center;
+  display: block;
+  transition: .5s;
+}
+.stage:hover {
+  -webkit-filter: brightness(110%);
+  transform: scale(1.1);
+  position: relative;
+}
+.stage::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 330px;
+  height: 420px;
+  transform: scale(100%);
+  background: url("https://i.imgur.com/4g7eYgs.png") center/cover no-repeat;
+  pointer-events: none;
+}
+.screen {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.imgScreen {
+  height: 405px;
+  width: 310px;
+  object-fit: cover;
+  object-position: 27% center;
+  display: block;
+  transition: .5s;
+}
+.screen:hover {
+  -webkit-filter: brightness(110%);
+  transform: scale(1.1);
+  position: relative;
+}
+.screen::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 330px;
+  height: 420px;
+  transform: scale(100%);
+  background: url("https://i.imgur.com/4g7eYgs.png") center/cover no-repeat;
+  pointer-events: none;
+}
+.stunt {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+}
+.imgStunt {
+  height: 405px;
+  width: 310px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: .5s;
+}
+.stunt:hover {
+  -webkit-filter: brightness(110%);
+  transform: scale(1.1);
+  position: relative;
+}
+.stunt::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 330px;
+  height: 420px;
+  transform: scale(100%);
+  background: url("https://i.imgur.com/4g7eYgs.png") center/cover no-repeat;
+  pointer-events: none;
+}
+.seiyu {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+}
+.imgSeiyu {
+  height: 405px;
+  width: 310px;
+  object-fit: cover;
+  object-position: 40% center;
+  display: block;
+  transition: .5s;
+}
+.seiyu:hover {
+  -webkit-filter: brightness(110%);
+  transform: scale(1.1);
+  position: relative;
+}
+.seiyu::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 330px;
+  height: 420px;
+  transform: scale(100%);
+  background: url("https://i.imgur.com/4g7eYgs.png") center/cover no-repeat;
+  pointer-events: none;
+}
+</style>
 </head>
 
 <body>
-	<div class="intro">
-<h3> About me </h3>
-<p> My name is Brian Nai. I was born and raised in Singapore, but I am now based in Los Angeles. I have sharpened the other tools in my kit to provide not just theatre and film acting, but also stunt work, and voice over for animation and video games. </p>
-	</div>
-
-	<div class="credits">
-<h3> Credits </h3>
-<h4> Film, TV (Selected)</h4>
-<ul>
-	<li> <a href="https://www.youtube.com/watch?v=cYFyR-MgJuI">DBS Sparks - S2E8 "One From The Heart"</a> <br> <i> Tyler </i> Supporting </li>
-	<li> Things We Leave (Short) <br> <i> Brian </i> Lead </li>
-	<li> Candlelight (Short) <br> <i> Lee </i> Lead </li>
-</ul>
-<h4> Theatre (Selected) </h4>
-<ul>
-	<li> BULL <br> <i> Tony </i> Lead </li>
-	<li> Apocalypse At The Rainforest Cafe <br> <i> Jaguar </i> Lead </li>
-	<li> Overcoat <br> <i> Mustached Thief / Paranomalist </i> Supporting </li>
-</ul>
-<h4> Voice Over (Selected) </h4>
-<ul>
-	<li> <a href="https://www.youtube.com/watch?v=iT-Aj5MOihw">Devil's Best Friend</a> <br> <i> Grim </i> Lead </li>
-	<li> <a href="https://www.youtube.com/watch?v=K1LaE_jCtsE&t=21s">Warranty</a> <br> <i> Keith </i> Lead </li>
-	<li> Poppies In The Snow <br> <i> Lin </I> Lead </li>
-	</div class>
-</body>
+  <br>
+  <div class="welcome">
+    <div class="headshot">
+      <img class="imgHeadshot" src="https://i.imgur.com/L8iBZmr.jpeg" height="500px">
+    </div>
+    <div class="intro">
+      <h3 class="overlay-name"> Brian Nai </h3>
+      <p class="overlay-text"> is a multifaceted actor who specializes in performance for stage, screen, stunts, and voiceover. Born and raised in Singapore but now based in LA, he is looking forward to diving in to the diverese industry here to continue sharpening the weapons in his arsenal. </p>
+      <div class="cv">
+        <a href="">> Starlog (CV)</a>
+      </div>
+    </div>
+  </div>
+	<div class="characterSelect">
+    <div class="stage">
+      <a href=""> <img class="imgStage" src="https://i.imgur.com/KG5TXiH.jpeg">
+      </a>
+      <div class="stageTitle"></div>
+    </div>
+    <div class="screen">
+      <a href=""> <img class="imgScreen" src="https://i.imgur.com/wiIMpXA.jpeg">
+      </a>
+    </div>
+    <div class="stunt">
+      <a href=""> <img class="imgStunt" src="https://i.imgur.com/P5XSG1P.jpeg">
+      </a>
+    </div>
+    <div class="seiyu">
+      <a href=""> <img class="imgSeiyu" src="https://i.imgur.com/17BIXSK.jpeg">
+      </a>
+    </div>
+  </div>
+</body> 
