@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<title>STAGE</title>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <stlye>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    margin: 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+.stageBorder {
+    border-width: 60px;
+    border-style: solid;
+    border-image: url("https://i.imgur.com/yINpyMk.png");
+    border-image-slice: 70;
+    border-image-repeat:round;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    border-radius: 30px;
+    width: 90vw;
+    position: relative;
+    overflow: visible;
+}
+.stage {
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 15px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+h1 {
+    color: whitesmoke;
+    font-size: 25px;
+    font-family: "Press Start 2P", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: transparent;
+    margin-bottom: 0;
+    z-index: 2;
+}
+h2 {
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: "Press Start 2P", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: transparent;
+    margin-bottom: 20px;
+    margin-top: 45px;
+    z-index: 2;
+}
+li {
+    color: whitesmoke;
+    font-family: "VT323", monospace;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+p {
+    color: whitesmoke;
+    background-color: transparent;
+    font-family: "VT323", monospace;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    position: relative;
+}
+#backBtn, #nextBtn {
+    width: 35px;
+    cursor: pointer;
+    margin: 5px;
+}
+.overcoatGallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+.overcoatGallery {
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    display: flex;
+    overflow-x: scroll;
+}
+.overcoatGallery::-webkit-scrollbar {
+    display: none;
+}
+.overcoatGallery div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.overcoatGallery div img {
+    width: 100%;
+}
+.overcoatGallery-a {
+    display: flex;
+}
+.overcoatGallery-b {
+    display: flex;
+}
+.sevenhoshiGallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+.sevenhoshiGallery {
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    display: flex;
+    overflow-x: scroll;
+}
+.sevenhoshiGallery::-webkit-scrollbar {
+    display: none;
+}
+.sevenhoshiGallery div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.sevenhoshiGallery div img {
+    width: 100%;
+}
+.sevenhoshiGallery-a {
+    display: flex;
+}
+.aatcGallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+.aatcGallery {
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    display: flex;
+    overflow-x: scroll;
+}
+.aatcGallery::-webkit-scrollbar {
+    display: none;
+}
+.aatcGallery div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.aatcGallery div img {
+    width: 100%;
+}
+.aatcGallery-a {
+    display: flex;
+}
+.aatcGallery-b {
+    display: flex;
+}
+.sitaGallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+.sitaGallery {
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    display: flex;
+    overflow-x: scroll;
+}
+.sitaGallery::-webkit-scrollbar {
+    display: none;
+}
+.sitaGallery div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.sitaGallery div img {
+    width: 100%;
+}
+.sitaGallery-a {
+    display: flex;
+}
+.bullGallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+.bullGallery {
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    display: flex;
+    overflow-x: scroll;
+}
+.bullGallery::-webkit-scrollbar {
+    display: none;
+}
+.bullGallery div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.bullGallery div img {
+    width: 100%;
+}
+.bullGallery-a {
+    display: flex;
+}
+.bullGallery-b {
+    display: flex;
+}
+  </style>
+
+</head>
+    <body>
+        <div class="stageBorder">
+            <div class="stage">
+        <h1> STAGE </h1>
+        <br>
+        <h2> Overcoat </h2>
+        <p> 
+            <i> Mustached Thief / Paranomalist </i> . Supporting 
+             <br> 
+            Directed by Tina Kronis . 2024
+        </p>
+        <div class="overcoatGallery-wrap">
+            <img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/BUTTONS/Screenshot 2025-03-29 at 1.00.12 AM.png" id="backBtn">
+        <div class="overcoatGallery">
+            <div class="overcoatGallery-a">
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/OVERCOAT/Overcoat-010.jpg"></span>
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/OVERCOAT/Overcoat-051.jpg"></span>
+            </div>
+            <div>
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/OVERCOAT/Overcoat-271.jpg"></span>
+            </div>
+            <div class="overcoatGallery-b">
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/OVERCOAT/Overcoat-125.jpg"></span>
+                <img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/OVERCOAT/Overcoat-186.jpg"></span>
+            </div>
+        </div>
+        <img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/BUTTONS/Screenshot 2025-03-29 at 1.07.55 AM.png" id="nextBtn">
+        </div>
+        <br>
+        <h2> Seven Hoshi </h2>
+        <p>
+            <i> Sora </i> . Supporting
+            <br>
+            Directed by Lisa Sanaye Dring . 2023
+        </p>
+        <div class="sevenhoshiGallery-wrap">
+            <img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/BUTTONS/Screenshot 2025-03-29 at 1.00.12 AM.png" id="backBtn">
+        <div class="sevenhoshiGallery">
+            <div>
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/SEVEN HOSHI/IMG_1684.JPG"></span>
+            </div>
+            <div class="sevenhoshiGallery-a">
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/SEVEN HOSHI/IMG_1686.JPG"></span>
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/SEVEN HOSHI/IMG_1690.JPG"></span>
+            </div>
+            <div>
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/SEVEN HOSHI/IMG_1687.JPG"></span>
+            </div>
+        </div>
+        <img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/BUTTONS/Screenshot 2025-03-29 at 1.07.55 AM.png" id="nextBtn">
+        </div>
+         <br>
+         <h2> Apocalypse at The Rainforest Cafe </h2>
+         <p>
+            <i> Jaguar </i> . Lead
+            <br>
+            Direced by Magdalene Taylor . 2022
+         </p>
+         <div class="aatcGallery-wrap">
+            <img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/BUTTONS/Screenshot 2025-03-29 at 1.00.12 AM.png" id="backBtn">
+        <div class="aatcGallery">
+            <div>
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/AP@TRC/R3_06226.jpeg"></span>
+            </div>
+            <div class="aatcGallery-a">
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/AP@TRC/R3_06364.jpeg"></span>
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/AP@TRC/20220227-DSC06021.jpeg"></span>
+            </div>
+            <div>
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/AP@TRC/R3_06324.jpeg"></span>
+            </div>
+            <div>
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/AP@TRC/20220227-DSC06115.jpeg"></span>
+            </div>
+            <div class="aatcGallery-b">
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/AP@TRC/20220227-DSC06071.jpeg"></span>
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/AP@TRC/R3_06174.jpeg"></span>
+            </div>
+        </div>
+        <img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/BUTTONS/Screenshot 2025-03-29 at 1.07.55 AM.png" id="nextBtn">
+        </div>
+        <br>
+        <h2> Something In The Air </h2>
+        <p>
+           <i> Pierre </i> . Lead
+           <br>
+           Direced by Chacha Tahng . 2022
+        </p>
+        <div class="sitaGallery-wrap">
+           <img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/BUTTONS/Screenshot 2025-03-29 at 1.00.12 AM.png" id="backBtn">
+       <div class="sitaGallery">
+           <div>
+               <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/SITA/DP0A0931 copy.jpg"></span>
+           </div>
+           <div class="sitaGallery-a">
+               <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/SITA/DP0A1031.CR2"></span>
+               <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/SITA/DP0A0948.CR2"></span>
+           </div>
+           <div>
+               <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/SITA/DP0A0903.CR2"></span>
+           </div>
+       </div>
+       <img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/BUTTONS/Screenshot 2025-03-29 at 1.07.55 AM.png" id="nextBtn">
+       </div>
+        <h2> BULL </h2>
+        <p>
+            <i> Tony </i> . Lead
+            <br>
+            Directed by Victoria Chen . 2021
+        </p>
+        <div class="bullGallery-wrap">
+            <img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/BUTTONS/Screenshot 2025-03-29 at 1.00.12 AM.png" id="backBtn">
+        <div class="bullGallery">
+            <div class="bullGallery-a">
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/BULL/13ec4df4-6796-4ea5-b158-ee366199cd04.jpg"></span>
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/BULL/133df003-edbb-4e74-8454-4b2fc2e2867e.jpg"></span>
+            </div>
+            <div class="bullGallery-b">
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/BULL/bef427fa-1f00-4398-bfdf-dbe8d5a4c715.jpg"></span>
+                <span><img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/STAGE/BULL/7cc0abb0-fe2b-4e3d-a3c7-be3658e8f1b8.jpg"></span>
+            </div>
+        </div>
+        <img src="/Users/briannai/Documents/School Work/Media and Web Development/WEBSITE/STAGE/IMAGES/BUTTONS/Screenshot 2025-03-29 at 1.07.55 AM.png" id="nextBtn">
+        </div>
+
+    <script>
+
+        let scrollContainer = document.querySelector(".galleryOvercoat");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+            scrollContainer.style.scrollBehavior = "auto";
+
+        });
+
+        nextBtn.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 500;
+        });
+        backBtn.addEventListener("click", ()=>{
+            scrollContainer.scrollLeft -= 500;
+            scrollContainer.style.scrollBehavior = "smooth";
+        });
+
+    </script>
+    </body>
+</html>
