@@ -299,6 +299,28 @@ a:hover{
   background: url("https://i.imgur.com/4g7eYgs.png") center/cover no-repeat;
   pointer-events: none;
 }
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: rgba(23, 112, 23, 0.5);
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.footer-link:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
 </style>
 </head>
 
@@ -350,7 +372,7 @@ a:hover{
   </div>
   <footer class="footer">
     <p>&copy; 2025 Brian Nai. All rights reserved.</p>
-    <a href="https://briannai.com/privacypolicy.html" class="footer-link">Privacy Policy</a>
+    <a href="https://briannai.com/privacypolicy.html" class="footer-link" font-family="VT323">Privacy Policy</a>
   </footer>  
   <h3 class="overlay-prompt"> Contact Me! </h3>
   <p class="overlay-text"> 
