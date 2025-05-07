@@ -15,7 +15,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
-/* h1 styling */
+@media (min-width: 1400px) {
+  .characterSelect {
+    display: flex;
+  }
+}
+@media (min-width: 601px), (max-width: 1399px) {
+  .characterSelect {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: auto auto;
+  }
+}
 h1 {
   color: white;
   font-size: 40px;
@@ -38,7 +49,6 @@ h3 {
   font-weight: 400;
   font-style: normal;
 }
-
 /* paragraph styling */
 p {
   color: white;
