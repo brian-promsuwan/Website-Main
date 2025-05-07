@@ -17,16 +17,22 @@
 <style>
 @media only screen and (min-width: 1400px) {
   .characterSelect {
+  size: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .welcome {
+    
   }
 }
 @media only screen and (min-width: 750px) and (max-width: 1399px) {
   .characterSelect {
+    size: 70%;
     grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (max-width: 749px) {
   .characterSelect {
+    size: 50%;
     grid-template-columns: 1fr;
   }
 }
@@ -305,9 +311,10 @@ a:hover{
   align-items: center;
   gap: 20px;
   padding: 15px;
-  background-color: rgba(23, 112, 23, 0.5);
+  background: rgba(23, 112, 23, 0.5);
   color: #ffffff;
   font-size: 14px;
+  font-family: 'VT323';
 }
 
 .footer-link {
@@ -372,11 +379,11 @@ a:hover{
   </div>
   <footer class="footer">
     <p>&copy; 2025 Brian Nai. All rights reserved.</p>
-    <a href="https://briannai.com/privacypolicy.html" class="footer-link" font-family="VT323">Privacy Policy</a>
+    <a href="https://briannai.com/privacypolicy.html" class="footer-link">Privacy Policy</a>
   </footer>  
-  <h3 class="overlay-prompt"> Contact Me! </h3>
+  <!-- <h3 class="overlay-prompt"> Contact Me! </h3>
   <p class="overlay-text"> 
     Email: briannai.stunts@gmail.com <br>
     Contact: +65 9638 4619 / +1 (661) 362 9865
-  </p>
+  </p> -->
 </body> 
