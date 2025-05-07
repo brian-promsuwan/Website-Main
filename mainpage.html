@@ -7,20 +7,20 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-SMT0GV5M8K');
 </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 @media only screen and (min-width: 1400px) {
   .characterSelect {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-@media only screen and (min-width: 601px), (max-width: 1399px) {
+@media only screen and (min-width: 601px) and (max-width: 1399px) {
   .characterSelect {
     grid-template-columns: 1fr 1fr;
   }
@@ -178,10 +178,6 @@ a:hover{
   place-items: center;
   height: 100vh;
   gap: 30px;
-  /* align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: relative; */
 }
 .stage-wrap, .screen-wrap, .stunts-wrap, .seiyu-wrap {
   display: block;
