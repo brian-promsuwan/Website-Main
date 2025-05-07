@@ -305,16 +305,21 @@ a:hover{
   background: url("https://i.imgur.com/4g7eYgs.png") center/cover no-repeat;
   pointer-events: none;
 }
+.characterWrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 15px;
-  background: rgba(23, 112, 23, 0.5);
+  padding: 15px 30px;
   color: #ffffff;
   font-size: 14px;
   font-family: 'VT323';
+  flex-wrap: wrap;
 }
 
 .footer-link {
@@ -347,7 +352,8 @@ a:hover{
   </div>
   <br>
   <h2 class="overlay-prompt"> Select a cartridge to learn more! </h2>
-	<div class="characterSelect">
+	<div class="characterWrap">
+  <div class="characterSelect">
     <div class="stage-wrap">
       <h1>STAGE</h1>
     <div class="stage">
@@ -380,7 +386,8 @@ a:hover{
   <footer class="footer">
     <p>&copy; 2025 Brian Nai. All rights reserved.</p>
     <a href="https://briannai.com/privacypolicy.html" class="footer-link">Privacy Policy</a>
-  </footer>  
+  </footer>
+  </div>
   <!-- <h3 class="overlay-prompt"> Contact Me! </h3>
   <p class="overlay-text"> 
     Email: briannai.stunts@gmail.com <br>
