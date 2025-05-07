@@ -15,26 +15,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
-@media screen (min-width: 1400px) {
+@media only screen and (min-width: 1400px) {
   .characterSelect {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: relative;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-@media screen (min-width: 601px), (max-width: 1399px) {
+@media only screen and (min-width: 601px), (max-width: 1399px) {
   .characterSelect {
-    display: grid;
-    grid-template-columns: max-content max-content;
-    grid-template-rows: auto auto;
-    place-items: center;
+    grid-template-columns: 1fr 1fr;
   }
 }
+@media only screen and (max-width: 600px) {
+  .characterSelect {
+    grid-template-columns: 1fr;
+  }
+}
+
 h1 {
   color: white;
   font-size: 40px;
@@ -177,8 +173,9 @@ a:hover{
   font-style: normal;
   color: whitesmoke;
 }
-/* .characterSelect {
-  display: flex;
+.characterSelect {
+  display: grid;
+  place-items: center;
   height: 100vh;
   width: 100vw;
   gap: 30px;
@@ -186,7 +183,7 @@ a:hover{
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
-} */
+}
 .stage-wrap, .screen-wrap, .stunts-wrap, .seiyu-wrap {
   display: block;
   margin-bottom: 20px;
