@@ -17,26 +17,24 @@
 <style>
 @media only screen and (min-width: 1400px) {
   .characterSelect {
-  size: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  .headshot {
-    size: 100%;
+  .imgHeadshot{
+    max-height: 500px%;
   }
-  .intro {
-    size: 100%;
+  .intro h3 and p{
+    font-size: 1em;
   }
 }
 @media only screen and (min-width: 750px) and (max-width: 1399px) {
   .characterSelect {
-    size: 70%;
     grid-template-columns: 1fr 1fr;
   }
-  .headshot {
-    size: 70%;
+  .imgHeadshot {
+    max-height: 400px;
   }
-  .intro {
-    size: 70%;
+  .intro h3 and p{
+    size: 0.7em;
   }
 }
 @media only screen and (max-width: 749px) {
@@ -44,11 +42,11 @@
     size: 50%;
     grid-template-columns: 1fr;
   }
-  .headshot {
-    size: 50%;
+  .imgHeadshot {
+    max-height: 300px;
   }
-  .intro {
-    size: 50%;
+  .intro h3 and p{
+    size: 0.5em;
   }
 }
 h1 {
