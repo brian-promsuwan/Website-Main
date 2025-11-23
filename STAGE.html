@@ -10,6 +10,25 @@
   gtag('js', new Date());
 
   gtag('config', 'G-SMT0GV5M8K');
+  let scrollContainer = document.querySelector(".galleryOvercoat");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+            scrollContainer.style.scrollBehavior = "auto";
+
+        });
+
+        nextBtn.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 500;
+        });
+        backBtn.addEventListener("click", ()=>{
+            scrollContainer.scrollLeft -= 500;
+            scrollContainer.style.scrollBehavior = "smooth";
+        });
 </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -129,9 +148,9 @@ p {
     display: flex;
     overflow-x: scroll;
 }
-.overcoatGallery::-webkit-scrollbar {
+/* .overcoatGallery::-webkit-scrollbar {
     display: none;
-}
+} */
 .overcoatGallery div {
     width: 100%;
     display: grid;
@@ -162,9 +181,9 @@ p {
     display: flex;
     overflow-x: scroll;
 }
-.sevenhoshiGallery::-webkit-scrollbar {
+/* .sevenhoshiGallery::-webkit-scrollbar {
     display: none;
-}
+} */
 .sevenhoshiGallery div {
     width: 100%;
     display: grid;
@@ -192,9 +211,9 @@ p {
     display: flex;
     overflow-x: scroll;
 }
-.aatcGallery::-webkit-scrollbar {
+/* .aatcGallery::-webkit-scrollbar {
     display: none;
-}
+} */
 .aatcGallery div {
     width: 100%;
     display: grid;
@@ -225,9 +244,9 @@ p {
     display: flex;
     overflow-x: scroll;
 }
-.sitaGallery::-webkit-scrollbar {
+/* .sitaGallery::-webkit-scrollbar {
     display: none;
-}
+} */
 .sitaGallery div {
     width: 100%;
     display: grid;
@@ -255,9 +274,9 @@ p {
     display: flex;
     overflow-x: scroll;
 }
-.bullGallery::-webkit-scrollbar {
+/* .bullGallery::-webkit-scrollbar {
     display: none;
-}
+} */
 .bullGallery div {
     width: 100%;
     display: grid;
@@ -400,7 +419,7 @@ p {
             Directed by Lisa Sanaye Dring . 2023
         </p>
         <div class="sevenhoshiGallery-wrap">
-            <img src="https://i.imgur.com/njJBm97.png" id="backBtn" alt="functional">
+            <!-- <img src="https://i.imgur.com/njJBm97.png" id="backBtn" alt="functional"> -->
         <div class="sevenhoshiGallery">
             <div>
                 <span><img src="https://i.imgur.com/wCtyWGq.jpeg" alt="Brian Nai as Sora knitting the threads of fate in the professional theater production of Seven Hoshi, CalArts School of Theater, CalArts Acting"></span>
@@ -413,7 +432,7 @@ p {
                 <span><img src="https://i.imgur.com/dWXXLl4.jpeg" alt="Brian Nai as Sora reeling the celestial yarn for his knitting as he is tended to by the sprites, CalArts School of Theater, CalArts Acting"></span>
             </div>
         </div>
-        <img src="https://i.imgur.com/oJ8EP8C.png" id="nextBtn" alt="functional">
+        <!-- <img src="https://i.imgur.com/oJ8EP8C.png" id="nextBtn" alt="functional"> -->
         </div>
          <br>
          <h2> Apocalypse at The Rainforest Cafe </h2>
@@ -423,7 +442,7 @@ p {
             Direced by Magdalene Taylor . 2022
          </p>
          <div class="aatcGallery-wrap">
-            <img src="https://i.imgur.com/njJBm97.png" id="backBtn" alt="functional">
+            <!-- <img src="https://i.imgur.com/njJBm97.png" id="backBtn" alt="functional"> -->
         <div class="aatcGallery">
             <div>
                 <span><img src="https://i.imgur.com/467yi28.jpeg" alt="Brian Nai as Jaguar awakening from his animatronic slumber after whole day of playing robot at the rainforest cafe in the professional theatre production of Apocalypse at The Rainforest Cafe, CalArts School of Theater Acting, Hollywood Fringe Festival"></span>
@@ -443,7 +462,7 @@ p {
                 <span><img src="https://i.imgur.com/c9eS1dL.jpeg" alt="Brian Nai as Jaguar in his resting spot in the cafe with Tiger in animatronic mode as they move robotically in rhythm with one another in the professional theatre production of Apocalypse at The Rainforest Cafe, CalArts School of Theater Acting, Hollywood Fringe Festival"></span>
             </div>
         </div>
-        <img src="https://i.imgur.com/oJ8EP8C.png" id="nextBtn" alt="functional">
+        <!-- <img src="https://i.imgur.com/oJ8EP8C.png" id="nextBtn" alt="functional"> -->
         </div>
         <br>
         <h2> Something In The Air </h2>
@@ -453,7 +472,7 @@ p {
            Direced by Chacha Tahng . 2022
         </p>
         <div class="sitaGallery-wrap">
-           <img src="https://i.imgur.com/njJBm97.png" id="backBtn" alt="functional">
+           <!-- <img src="https://i.imgur.com/njJBm97.png" id="backBtn" alt="functional"> -->
        <div class="sitaGallery">
            <div>
                <span><img src="https://i.imgur.com/0Gv5y5P.jpeg" alt="Brian Nai as Pierre crossing the TSA full body scan at the airport in the professional theater production of Something In The Air, CalArts School of Theatre Acting, Hollywood Fringe Festival"></span>
@@ -466,7 +485,7 @@ p {
                <span><img src="https://i.imgur.com/luEusVa.jpeg" alt="Brian Nai as Pierre drunk and being dragged away at a frat party in the professional theater production of Something In The Air, CalArts School of Theatre Acting, Hollywood Fringe Festival"></span>
            </div>
        </div>
-       <img src="https://i.imgur.com/oJ8EP8C.png" id="nextBtn" alt="functional">
+       <!-- <img src="https://i.imgur.com/oJ8EP8C.png" id="nextBtn" alt="functional"> -->
        </div>
         <h2> BULL </h2>
         <p>
@@ -475,7 +494,7 @@ p {
             Directed by Victoria Chen . 2021
         </p>
         <div class="bullGallery-wrap">
-            <img src="https://i.imgur.com/njJBm97.png" id="backBtn" alt="functional">
+            <!-- <img src="https://i.imgur.com/njJBm97.png" id="backBtn" alt="functional"> -->
         <div class="bullGallery">
             <div class="bullGallery-a">
                 <span><img src="https://i.imgur.com/nwIOcSb.jpeg" alt="Brian Nai as Tony hugging his coworkers in the professional theatre production of BULL, Wild Rice, Singapore"></span>
@@ -486,33 +505,10 @@ p {
                 <span><img src="https://i.imgur.com/m8zjZgU.jpeg" alt="Brian Nai stares down harshly at Thomas alongside Isobel and their boss as Thomas is being criticized in the professional theatre production of BULL, Wild Rice, Singapore"></span>
             </div>
         </div>
-        <img src="https://i.imgur.com/oJ8EP8C.png" id="nextBtn" alt="functional">
+        <!-- <img src="https://i.imgur.com/oJ8EP8C.png" id="nextBtn" alt="functional"> -->
         </div>
             </div>
         </div>
-    <script>
-
-        let scrollContainer = document.querySelector(".galleryOvercoat");
-        let backBtn = document.getElementById("backBtn");
-        let nextBtn = document.getElementById("nextBtn");
-
-        scrollContainer.addEventListener("wheel", (evt) => {
-            evt.preventDefault();
-            scrollContainer.scrollLeft += evt.deltaY;
-            scrollContainer.style.scrollBehavior = "auto";
-
-        });
-
-        nextBtn.addEventListener("click", ()=>{
-            scrollContainer.style.scrollBehavior = "smooth";
-            scrollContainer.scrollLeft += 500;
-        });
-        backBtn.addEventListener("click", ()=>{
-            scrollContainer.scrollLeft -= 500;
-            scrollContainer.style.scrollBehavior = "smooth";
-        });
-
-    </script>
         </main>
     </body>
 </html>
