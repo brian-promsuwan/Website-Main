@@ -106,6 +106,33 @@ p {
     cursor: pointer;
     margin: 5px;
 }
+.safGallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+.safGallery {
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    display: flex;
+    overflow-x: scroll;
+}
+/* .safGallery::-webkit-scrollbar {
+    display: none;
+} */
+.safGallery div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.safGallery div img {
+    width: 100%;
+}
 .mulanGallery-wrap {
     display: flex;
     align-items: center;
